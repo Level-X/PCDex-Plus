@@ -5,597 +5,769 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Getting Started | GPX+ Shiny Tracker</title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    <link rel="icon" href="Images/Main/Sparkles.png">
-    <script src="Script-ClickProgress.js"></script>
-    <script>
-        window.onload = function () { markAll(); }
-    </script>
+    <title>PCDex+ :: Getting Started</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/png" href="Images/Main/PCDex+-Icon.png">
+    <script src="JS/Theme.js" defer></script>
 </head>
 
-<body class="gs">
+<body>
     <header>
-        <img src="Images/Getting Started/Banner.png" alt="Tracker Version Banner">
+        <a href="Getting Started.html"><img src="Images/Main/PCDex+.png" alt="Logo" id="Top"></a>
+        <div class="theme">
+            <span class="theme-text">Choose Theme</span>
+            <button id="sun" class="theme-switch" title="#TeamSun" aria-label="Switch Theme To Sun"></button>
+            <button id="moon" class="theme-switch" title="#TeamMoon" aria-label="Switch Theme To Moon"></button>
+        </div>
     </header>
-    <section class="sidebar">
-        <nav class="menu">
-            <div class="head">Open Your Shiny Tracker</div>
+
+    <img class="welcome" src="Images/Getting Started/Welcome.png" alt="Welcome Banner" id="Welcome">
+
+    <div class="content-wrapper-gs">
+        <nav class="sidebar">
+            <div class="title">Choose Your Challenge!</div>
             <ul>
-                <li><a href="GPX+ Shiny Tracker Standard.html">Standard Edition</a></li>
-                <li><a href="GPX+ Shiny Tracker Ultimate.html">Ultimate Edition</a></li>
-                <li><a href="GPX+ Shiny Tracker Minimalist.html">Minimalist Edition</a></li>
+                <li class="basic"><a href="PCDex+ Basic.html">Basic Challenge</a></li>
+                <li class="standard"><a href="PCDex+ Standard.html">Standard Challenge</a></li>
+                <li class="ultimate"><a href="PCDex+ Ultimate.html">Ultimate Challenge</a></li>
             </ul>
-            <div class="head">Navigation</div>
+            <div class="title">The PokéNav</div>
             <ul>
-                <li><a href="#Welcome">Welcome</a></li>
-                <li><a href="#Download">Download</a></li>
-                <li><a href="#Changelog">Changelog</a></li>
-                <li><a href="#Help">Help Desk</a></li>
-                <li><a href="#Thanks">Thank You!</a></li>
+                <li class="master"><a href="#Welcome">Welcome</a></li>
+                <li class="master"><a href="#PCDex">About The Project</a></li>
+                <li class="master"><a href="#Download">Files & Download</a></li>
+                <li class="master"><a href="#Changelog">The Changelog</a></li>
+                <li class="master"><a href="#Help">Need Help?</a></li>
             </ul>
         </nav>
-    </section>
-    <main>
-        <div class="head">The Welcome Section</div>
-        <div class="body">
-            <img src="Images/Getting Started/Welcome.png" alt="Welcome Banner" id="Welcome">
-            <p class="GS">
-                GPX+ Shiny Tracker is a project that is subject to occasional updates. I think of it as a community
-                project, so any suggestions or contributions to updates are welcome! Please message me if you want to
-                contribute, have suggestions, or come across any issues! I can be reached on the
-                <a href="https://forums.gpx.plus/index.php?showuser=170583" target="_blank">forums</a> or on discord
-                (Level-X#4607).
-            </p>
-        </div>
-        <div class="head">The Download Section</div>
-        <div class="body">
-            <img src="Images/Getting Started/Download.png" alt="Download Banner" id="Download">
-            <p class="GS">The project is hosted on GitHub. There you'll see a list of files in the repository.</p>
-            <div class="head-small">GitHub Files And Descriptions</div>
-            <div class="body-small">
-                <ul class="GS">
-                    <li>Getting Started.html</li>
-                    <p>A document to help a new user get accustomed to how the GPX+ Shiny Tracker works. It also
-                        contains all the latest and previous update information.</p>
-                    <li>GPX+ Shiny Tracker: Standard.html</li>
-                    <p>The Shiny Tracker for people who want a real tough challenge: having a Standard Living Pokédex.
-                        This Tracker doesn't contain minor gender differences and you should use it if you're aiming on
-                        obtaining one Shiny per Pokédex entry.</p>
-                    <li>GPX+ Shiny Tracker: Ultimate.html</li>
-                    <p>The Shiny Tracker for people who are taking on the toughest challenge: having an Ultimate Living
-                        Pokédex. This Tracker has all gender differences included and you should use it if you're
-                        planning on going above and beyond for your Shiny collection.</p>
-                    <li>GPX+ Shiny Tracker: Minimalist.html</li>
-                    <p>The Shiny Tracker for people who keep things simple: you already know it's impossible to obtain
-                        every Shiny Arceus. This Tracker cuts down on a significant amount of entries and you should use
-                        it if you're aiming on obtaining mostly one Shiny per Evolution line.</p>
-                    <li>Style.css</li>
-                    <p>This goes alongside the .html files. Essentially, it holds the design and makes everything look
-                        pretty.</p>
-                    <li>Script-ClickProgress.js</li>
-                    <p>A Javascript file made by Cycloneblaze. This gives you the option of easily adding the shinies
-                        you've collected with a mouse click over using manual code. It's compatible with all three
-                        versions of the Tracker.</p>
-                    <li>Script-SearchBar.js</li>
-                    <p>Another Javascript file made by Cycloneblaze. This adds in a search bar which allows you to
-                        search for Pokémon in the list by their name and jump to them. It's compatible with all three
-                        versions of the Tracker.</p>
-                    <li>README.md</li>
-                    <p>A file created by GitHub. It contains all the latest and previous update information and download
-                        links.</p>
-                </ul>
+
+        <main class="gs">
+            <div class="infobox-gs">
+                <div class="title" id="PCDex">About The Project</div>
+                <div class="section-gs">
+                    <img class="gs" src="Images/Getting Started/PCDex+.png" alt="PCDex+ Banner">
+                    <p>PCDex+, formally GPX+ Shiny Tracker, is a personal project that I started for myself years back,
+                        but in 2021 it was shared to the public! It's a tool designed to help players of Global PokédeX
+                        Plus have an easier time cataloging their Shiny Pokémon they obtain! My goal is to make the
+                        project have the information of a Pokédex with the appearance of a Pokémon PC, hence the name of
+                        the project! PCDex+ is subject to occasional updates!</p>
+                    <img class="gs" src="Images/Getting Started/Thanks.png" alt="Thank You! Banner">
+                    <p>Over the years it has gotten many updates, with that brought neat things and overall design
+                        improvements! Seriously, the day the project got shared to the public, <a
+                            href="https://cycloneblaze.net/" target="_blank">Cycloneblaze</a>, overnight, made a drastic
+                        improvement to the project by implementing JavaScript features that allowed you to mark Pokemon
+                        as "owned" with a single mouseclick instead of the original intended method of having people
+                        edit through HTML. That was so cool to me! I'm still very thankful for it! Community members <a
+                            href="https://gpx.plus/user/Rookie+Roo" target="_blank">Rookie Roo</a> and <a
+                            href="https://gpx.plus/user/Isla+de+Monte+Cristo" target="_blank">Isla de Monte Cristo</a>
+                        have also helped with other challenges of the project! I think of PCDex+ as a community project,
+                        so any suggestions or contributions to updates are welcome!</p>
+                </div>
             </div>
-            » » » <a class="download" href="https://github.com/Level-X/GPX-Shiny-Tracker/archive/refs/heads/main.zip"
-                target="_blank">Download GPX+ Shiny Tracker Version: 4.4</a> « « «
-            <p class="GS">It's always recommended that you download the latest version!</p>
-        </div>
-        <div class="head">The Changelog Section</div>
-        <div class="body">
-            <img src="Images/Getting Started/Changes.png" alt="Changelog Banner" id="Changelog">
-            <p class="GS">Current version changes.</p>
-            <div class="head-small">v4.4</div>
-            <div class="body-small">
-                <div class="subtitle">Everything</div>
-                <ul class="GS2">
-                    <li>Incremented version number.</li>
-                    <div class="subtitle">Shiny Trackers</div>
-                    <li>Banners updated to v4.4</li>
-                    <li>Added icons for Hisuian Sneasel, Calyrex, Calyrex [Ice Rider], Calyrex [Shadow Rider], Sneasler,
-                        Klawf, Bombirdier, and Orthworm.</li>
-                    <div class="subtitle">Getting Started</div>
-                    <li>Added v4.4 changes.</li>
-                </ul>
+
+            <div class="infobox-gs">
+                <div class="title" id="Download">Files & Download</div>
+                <div class="section-gs">
+                    <img class="gs" src="Images/Getting Started/Download.png" alt="Download Banner">
+                    <p>The project is hosted on GitHub. There you'll see a list of files in the repository.</p><br>
+                    <div class="title">Files And Descriptions</div>
+                    <div class="sub-section">
+                        <ul class="master">
+                            <li>Getting Started.html</li>
+                            <li class="expand">A document to help a new user get accustomed to how PCDex+ works. It also
+                                contains all the latest and previous update information.</li>
+                            <li>PCDex+ Basic.html</li>
+                            <li class="expand">For people who keep things simple: you already know it's impossible to
+                                obtain every Shiny Arceus! This challenge cuts down on a significant amount of entries
+                                and you should use it if you're aiming on obtaining mostly one Shiny per Evolution line.
+                            </li>
+                            <li>PCDex+ Standard.html</li>
+                            <li class="expand">For people who want a real tough challenge: having a Shiny Standard
+                                Living Pokédex. This challenge doesn't contain minor gender differences and you should
+                                use it if you're aiming on obtaining one Shiny per Pokédex entry.</li>
+                            <li>PCDex+ Ultimate.html</li>
+                            <li class="expand">For people who are taking on the toughest challenge: having a Shiny
+                                Ultimate Living Pokédex. This challenge has all gender differences included and you
+                                should use it if you're planning on going above and beyond for your Shiny collection.
+                            </li>
+                            <li>Style.css</li>
+                            <li class="expand">This goes alongside the .html files. Essentially, it holds the design and
+                                makes everything look pretty.</li>
+                            <li>Cheats.js</li>
+                            <li class="expand">A Javascript file. This gives you the ability to mark every Shiny as
+                                obtained with the click of a button! Could be useful for specific viewing purposes such
+                                as the Poké Hunt. You'll also be able to reverse back to your previous progress or
+                                completely wipe your progression.</li>
+                            <li>ClickProgress.js</li>
+                            <li class="expand">A Javascript file made by Cycloneblaze. This gives you the option of
+                                easily adding the shinies you've collected with a mouse click over using manual code.
+                                It's compatible with all three versions of PCDex+.</li>
+                            <li>Filters.js</li>
+                            <li class="expand">A Javascript file. This gives you the ability to toggle on and off
+                                filters to better search for a specific group of Pokémon. It's compatible with all three
+                                versions of PCDex+.</li>
+                            <li>SearchBar.js</li>
+                            <li class="expand">Another Javascript file made by Cycloneblaze. This adds in a search bar
+                                which allows you to search for Pokémon in the list by their name and jump to them. It's
+                                compatible with all three versions of PCDex+.</li>
+                            <li>Summary.js</li>
+                            <li class="expand">A Javascript file. This gives extra help controlling the display of the
+                                Summary when hovering over Pokémon. It's compatible with all three versions of PCDex+.
+                            </li>
+                            <li>Theme.js</li>
+                            <li class="expand">A Javascript file. This gives you the ability to switch between the Sun
+                                and Moon themes. It's compatible with all three versions of PCDex+.</li>
+                            <li>README.md</li>
+                            <li class="expand">A file created by GitHub. It contains all the latest and previous update
+                                information and download links.</li>
+                        </ul>
+                    </div>
+                    » » » <a href="https://github.com/Level-X/PCDex-Plus/archive/refs/heads/main.zip"
+                        target="_blank">Download PCDex+ Version: 5</a> « « «
+                    <p>It's always recommended that you download the latest version!</p>
+                </div>
             </div>
-            <p class="GS">Past version changes.<br>
-                Please click on the corresponding version below to expand or collapse the element.</p>
-            <details>
-                <summary>v4.3</summary>
-                <div class="body-small">
-                    <div class="subtitle">Everything</div>
-                    <ul class="GS2">
-                        <li>Incremented version number.</li>
-                        <div class="subtitle">Shiny Trackers</div>
-                        <li>Banners updated to v4.3</li>
-                        <li>A few minor errors have been corrected.</li>
-                        <li>Added icons for Galarian Weezing, Paldean Tauros [Combat Breed], Paldean Tauros [Blaze
-                            Breed],
-                            Paldean Tauros [Aqua Breed], Dialga [Origin], Palkia [Origin], Enamorus [Incarnate],
-                            Enamorus
-                            [Therian], Tandemaus, Maushold [Family of Three], Maushold [Family of Four], Smoliv, Dolliv,
-                            Arboliva, Nacli, Naclstack, Garganacl, Charcadet, Armarouge, Ceruledge, Tadbulb, Bellibolt,
-                            Shroodle, Grafaiai, Capsakid, Scovillain, Tinkatink, Tinkatuff, Tinkaton, Finizen, Palafin
-                            [Zero], Palafin [Hero], Varoom, Revavroom, Tatsugiri [Curly], Tatsugiri [Droopy], Tatsugiri
-                            [Stretchy], Annihilape, Farigiraf, Dudunsparce [Two-Segment], Dudunsparce [Three-Segment],
-                            Kingambit, Iron Treads, Iron Bundle, Iron Hands, Iron Jugulis, Iron Moth, Iron Thorns,
-                            Frigibax,
-                            Arctibax, Baxcalibur, Iron Valiant, Poltchageist, Sinistcha, Terapagos, Terapagos
-                            [Terastal],
-                            Terapagos [Stellar], Noodle Ekans, Noodle Arbok, Armored Mewtwo [V1998], Armored Mewtwo
-                            [V2019],
-                            and Revavroom [Starmobile].</li>
-                        <div class="subtitle">Getting Started</div>
-                        <li>Added v4.3 changes.</li>
-                    </ul>
+
+            <div class="infobox-gs">
+                <div class="title" id="Changelog">The Changelog</div>
+                <div class="section-gs">
+                    <img class="gs" src="Images/Getting Started/Changes.png" alt="Changelog Banner">
+                    <p>Current version changes.</p><br>
+                    <div class="title">v5</div>
+                    <div class="sub-section">
+                        <p class="highlight">All file types (HTML, CSS, and JavaScript) have had changes to them and
+                            require the same version (v5) of the files to cooperate properly!</p>
+                        <ul class="master">
+                            <li>General:</li>
+                            <li class="expand">The project name has been changed to PCDex+, which is a little spin on
+                                PC, Pokédex, and GPX+!</li>
+                            <li class="expand">Going forward there are three challenges: Basic, Standard, and Ultimate.
+                                Basic will be represented with a Poké Ball, Standard with a Great Ball, Ultimate with an
+                                Ultra Ball, and the Getting Started page will be represented with a Master Ball.</li>
+                            <li class="expand">Two themes have been introduced, Sun theme (light mode) and Moon theme
+                                (dark mode).</li>
+                            <li class="expand">The Favicon has been updated.</li>
+                            <li class="expand">The main banner has been condensed and now appears in the top left corner
+                                of each page with its own flair.</li>
+                            <li class="expand">The footer has been updated to be more simplified and clean.</li>
+                            <li class="expand">The main background has been updated.</li>
+                            <li class="expand">All sections now have a secondary background.</li>
+                            <li class="expand">You'll now get the option to return to the top of the page once you
+                                reached the bottom.</li>
+                            <li class="expand">Incremented version number.</li>
+                            <li>All Challenges:</li>
+                            <li class="expand">A filter system has been introduced! Have fun searching by: Generation,
+                                Type, Rarity, Form, Gender, Color, Egg Steps, Egg Groups, and Ownership.</li>
+                            <li class="expand">"Cheats" have been introduced! Become a Shiny Master with the click of a
+                                button, restore previous data, or wipe all data!</li>
+                            <li class="expand">The search bar positioning has been adjusted.</li>
+                            <li class="expand">The UI has been drastically improved, much more PC like than before!</li>
+                            <li class="expand">The Challenge Information sections have been expanded to contain more
+                                detail.</li>
+                            <li class="expand">The Pokémon summary has been expanded to include Generation and Rarity
+                                information.</li>
+                            <li class="expand">The Pokémon summary has been updated to include proper padding between
+                                elements.</li>
+                            <li class="expand">The Pokémon type icons have been updated.</li>
+                            <li class="expand">The Pokémon placeholder data icon has been updated.</li>
+                            <li class="expand">Updated icons for: Hippopotas (Female), Hippowdon (Female), Arceus
+                                [Dragon], Arceus [Dark], Arceus [Ground], Arceus [Fighting], Arceus [Fire], Arceus
+                                [Ice], Arceus [Bug], Arceus [Steel], Arceus [Grass], Arceus [Psychic], Arceus [Fairy],
+                                Arceus [Flying], Arceus [Water], Arceus [Ghost], Arceus [Rock], Arceus [Poison], Arceus
+                                [Electric], Purrloin, Toxtricity [Amped], Toxtricity [Low Key], Hatenna, Hattrem,
+                                Hatterene, Alcremie [Strawberry], Alcremie [Berry], Alcremie [Love], Alcremie [Star],
+                                Alcremie [Clover], Alcremie [Flower], Alcremie [Ribbon], Falinks, Zacian [Hero of Many
+                                Battles], Zacian [Crowned Sword], Zamazenta [Hero of Many Battles], Zamazenta [Crowned
+                                Shield], Urshifu [Single Strike], Urshifu [Rapid Strike], Overqwil, Sprigatito,
+                                Floragato, Meowscarada, Fuecoco, Skeledirge, Quaxly, Quaxwell, Quaquaval, Spidops,
+                                Maschiff, Mabosstiff, Veluza, Dipplin, Hydrapple, and Eevee [Heart].</li>
+                            <li class="expand">Added new data for: Pecharunt [Closed], Swablu [Celestial], Altaria
+                                [Celestial], Regidiva, Professor Tangrowth, and Autumn Leafeon.</li>
+                            <li class="expand">Added icons for: Nymble, Lokix, Wattrel, Kilowattrel, Bramblin,
+                                Brambleghast, Toedscool, Toedscruel, Rellor, Rabsca, Flittle, Espathra, Wiglett,
+                                Wugtrio, Glimmet, Glimmora, Cetoddle, Cetitan, Dondozo, Gimmighoul [Roaming], Gimmighoul
+                                [Chest], Gholdengo, Wo-Chien, Chien-Pao, Ting-Lu, Chi-Yu, Okidogi, Munkidori,
+                                Fezandipiti, Archaludon, Pecharunt, Pecharunt [Closed], Swablu [Celestial], Altaria
+                                [Celestial], Regidiva, Professor Tangrowth, and Autumn Leafeon.</li>
+                            <li class="expand">Added placeholder data for the new Mega Evolutions released in Pokémon
+                                Legends: Z-A.</li>
+                            <li class="expand">Added Generation 10 placeholder data.</li>
+                            <li class="expand">Fixed a type issue with Morpeko [Hangry Mode]. Previously it displayed
+                                its type in reverse order.</li>
+                            <li class="expand">Fixed a placement issue with Gimmighoul [Roaming] and Gimmighoul [Chest]
+                                forms. Previously they appeared in reverse order.</li>
+                            <li class="expand">Fixed a spelling mistake with Magikarp [Gray].</li>
+                            <li>Basic Challenge:</li>
+                            <li class="expand">Reduced the amount of Pokémon needed.</li>
+                            <li class="expand">Added more Key emoji icons to show when a Pokémon can reverse its form
+                                change or if it requires DNA Splicers.</li>
+                            <li class="expand">Fixed a mistake of Pulian not having Pokédex requirement information on
+                                its Summary.</li>
+                            <li>Getting Started:</li>
+                            <li class="expand">Slightly updated the UI.</li>
+                            <li class="expand">Removed nonessential sections.</li>
+                            <li class="expand">Updated Help information and screenshots.</li>
+                            <li class="expand">Added v5 changes.</li>
+                        </ul>
+                    </div>
+
+                    <p>Please click on the corresponding version below to expand or collapse the element.</p><br>
+                    <div class="title">Past Version Changes</div>
+                    <div class="sub-section">
+                        <details>
+                            <summary>v4.4</summary>
+                            <div class="sub-section">
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Banners updated to v4.4</li>
+                                    <li class="expand">Added icons for Hisuian Sneasel, Calyrex, Calyrex [Ice Rider],
+                                        Calyrex [Shadow Rider], Sneasler, Klawf, Bombirdier, and Orthworm.</li>
+                                    <li>Getting Started:</li>
+                                    <li class="expand">Added v4.4 changes.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v4.3</summary>
+                            <div class="sub-section">
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Banners updated to v4.3</li>
+                                    <li class="expand">A few minor errors have been corrected.</li>
+                                    <li class="expand">Added icons for Galarian Weezing, Paldean Tauros [Combat Breed],
+                                        Paldean Tauros [Blaze Breed], Paldean Tauros [Aqua Breed], Dialga [Origin],
+                                        Palkia [Origin], Enamorus [Incarnate], Enamorus [Therian], Tandemaus, Maushold
+                                        [Family of Three], Maushold [Family of Four], Smoliv, Dolliv, Arboliva, Nacli,
+                                        Naclstack, Garganacl, Charcadet, Armarouge, Ceruledge, Tadbulb, Bellibolt,
+                                        Shroodle, Grafaiai, Capsakid, Scovillain, Tinkatink, Tinkatuff, Tinkaton,
+                                        Finizen, Palafin [Zero], Palafin [Hero], Varoom, Revavroom, Tatsugiri [Curly],
+                                        Tatsugiri [Droopy], Tatsugiri [Stretchy], Annihilape, Farigiraf, Dudunsparce
+                                        [Two-Segment], Dudunsparce [Three-Segment], Kingambit, Iron Treads, Iron Bundle,
+                                        Iron Hands, Iron Jugulis, Iron Moth, Iron Thorns, Frigibax, Arctibax,
+                                        Baxcalibur, Iron Valiant, Poltchageist, Sinistcha, Terapagos, Terapagos
+                                        [Terastal], Terapagos [Stellar], Noodle Ekans, Noodle Arbok, Armored Mewtwo
+                                        [V1998], Armored Mewtwo [V2019], and Revavroom [Starmobile].</li>
+                                    <li>Getting Started:</li>
+                                    <li class="expand">Added v4.3 changes.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v4.2</summary>
+                            <div class="sub-section">
+                                <p class="highlight">All file types (HTML, CSS, and JavaScript) have had changes to them
+                                    and require the same version (v4.2) of the files to cooperate properly!</p>
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">The size of the banner button in the Footer has been reduced.
+                                    </li>
+                                    <li class="expand">The Navigation sections will now detect your screen size and
+                                        shift it's appearance to fit it. Big thanks to Cycloneblaze!</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Banners updated to v4.2</li>
+                                    <li class="expand">The information section has had spelling and grammar errors
+                                        fixed.</li>
+                                    <li class="expand">A search function was introduced! Big thanks to Cycloneblaze!
+                                    </li>
+                                    <li class="expand">Added icons for Hisuian Growlithe, Hisuian Arcanine, Hisuian
+                                        Avalugg, Dracozolt, Arctozolt, Dracovish, Arctovish, Zacian [Hero of Many
+                                        Battles], Zacian [Crowned Sword], Zamazenta [Hero of Many Battles], Zamazenta
+                                        [Crowned Sword], Wyrdeer, Kleavor, Ursaluna, Ursaluna [Bloodmoon], Quaxly,
+                                        Quaxwell, Quaquaval, Fidough, Dachsbun, Squawkabilly [Green Plumage],
+                                        Squawkabilly [Blue Plumage], Squawkabilly [Yellow Plumage], Squawkabilly [White
+                                        Plumage], Maschiff, Mabosstiff, Cyclizar, Greavard, Houndstone, Flamigo, Veluza,
+                                        Great Tusk, Scream Tail, Brute Bonnet, Flutter Mane, Slither Wing, Sandy Shocks,
+                                        and Roaring Moon.</li>
+                                    <li>Getting Started:</li>
+                                    <li class="expand">Added v4.2 changes.</li>
+                                    <li class="expand">Added information on the "Script-SearchBar.js"file in the GitHub
+                                        Files And Descriptions section.</li>
+                                    <li class="expand">Added a "How do I search for Pokémon?" answer in The Help
+                                        Section.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v4.1</summary>
+                            <div class="sub-section">
+                                <p class="highlight">Two file types (HTML and CSS) have had changes to them and require
+                                    the same version (v4.1) of the files to cooperate properly.</p>
+                                <p class="highlight">A new alternative tracker, the Minimalist Edition, has been
+                                    introduced thanks to help from Rookie Roo and Isla de Monte Cristo!</p>
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li class="expand">Updated Footer.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Introduced the GPX+ Shiny Tracker Minimalist Edition.</li>
+                                    <li class="expand">Banners updated to v4.1</li>
+                                    <li class="expand">Renamed container for section that contains all Pokémon Icons.
+                                    </li>
+                                    <li class="expand">Some Pokémon have had their order adjusted, these include: Burmy
+                                        [Sandy Cloak], Wormadam [Sandy Cloak], Spiral Shellder, and Omastar [Orchid].
+                                    </li>
+                                    <li class="expand">Added an Information section on each version of the Tracker that
+                                        gives a rundown about it.</li>
+                                    <li>Getting Started:</li>
+                                    <li class="expand">Added v4.1 changes.</li>
+                                    <li class="expand">Added a link in the Navigation Menu to open up the Minimalist
+                                        Edition of the Tracker.</li>
+                                    <li class="expand">Refined information in various sections.</li>
+                                    <li class="expand">Removed the Miscellaneous Q&A section.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v4.0</summary>
+                            <div class="sub-section">
+                                <p class="highlight">All file types (HTML, CSS, and JavaScript) have had changes to them
+                                    and require the same version (v4.0) of the files to cooperate properly.</p>
+                                <p class="highlight">On December 31, 2024 old icons that are hosted on Imgur will
+                                    become inaccessible so please update before then so your Tracker doesn't lose
+                                    all image access.</p>
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">Images are no longer using an Imgur link, they now are local like
+                                        the other files which makes the page load much quicker.</li>
+                                    <li class="expand">Changed the main background image and colors.</li>
+                                    <li class="expand">Text font has been enlarged.</li>
+                                    <li class="expand">A navigation menu was introduced that follows you as you scroll
+                                        the page. It now hosts the links from the previous Quick Jump Menu.</li>
+                                    <li class="expand">A small Poké Ball icon has been added in front of each link in
+                                        the new navigation menu.</li>
+                                    <li class="expand">Added a border on the top of the Footer.</li>
+                                    <li class="expand">Reduced the size of the Footer.</li>
+                                    <li class="expand">Fixed various small errors.</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Changed the file name for the Standard Tracker.</li>
+                                    <li class="expand">Adjusted the titles of Trackers.</li>
+                                    <li class="expand">Banner text changed and updated to version 4.0.</li>
+                                    <li class="expand">Placeholder data is no longer counted towards completion
+                                        progress.</li>
+                                    <li class="expand">The Pokémon hover information box width has been expanded due to
+                                        larger text font.</li>
+                                    <li class="expand">Added icons for Gigantamax Venusaur, Gigantamax Charizard,
+                                        Gigantamax Blastoise, Gigantamax Butterfree, Gigantamax Pikachu, Gigantamax
+                                        Meowth, Gigantamax Machamp, Gigantamax Gengar, Gigantamax Kingler, Hisuian
+                                        Voltorb, Hisuian Electrode, Gigantamax Lapras, Gigantamax Eevee, Gigantamax
+                                        Snorlax, Galarian Articuno, Galarian Zapdos, Galarian Moltres, Paldean Wooper,
+                                        Hisuian Qwilfish, Hisuian Lilligant, Gigantamax Garbodor, Hisuian Zorua, Hisuian
+                                        Zoroark, Hisuian Braviary, Hisuian Sliggoo, Hisuian Goodra, Necrozma [Ultra
+                                        Burst], Gigantamax Melmetal, Gigantamax Rillaboom, Gigantamax Cinderace,
+                                        Gigantamax Inteleon, Gigantamax Corviknight, Gigantamax Orbeetle, Gigantamax
+                                        Drednaw, Gigantamax Coalossal, Gigantamax Flapple, Gigantamax Appletun,
+                                        Gigantamax Sandaconda, Cramorant [Gulping], Cramorant [Gorging], Gigantamax
+                                        Toxtricity, Gigantamax Centiskorch, Gigantamax Hatterene, Gigantamax Grimmsnarl,
+                                        Milcery, Alcremie [Strawberry], Alcremie [Berry], Alcremie [Love], Alcremie
+                                        [Star], Alcremie [Clover], Alcremie [Flower], Alcremie [Ribbon], Gigantamax
+                                        Alcremie, Eiscue [Noice Face], Gigantamax Copperajah, Gigantamax Duraludon,
+                                        Eternamax Eternatus, Gigantamax Urshifu [Single Strike Style], Gigantamax
+                                        Urshifu [Rapid Strike Style], Regieleki, Regidrago, Overqwil, Fuecoco, Crocalor,
+                                        Skeledirge, Lechonk, Oinkologne (Male/Female), Tarountula, Spidops, Pawmi,
+                                        Pawmo, Pawmot, Clodsire, Dipplin, and Hydrapple.</li>
+                                    <li class="expand">Removed unneeded placeholder data.</li>
+                                    <li class="expand">Added placeholder data for Pokémon introduced in Scarlet and
+                                        Violet: The Indigo Disk.</li>
+                                    <li class="expand">Added a background to the PC Box number display.</li>
+                                    <li class="expand">The completion progress bars of all Generations have been placed
+                                        inside of the new navigation menu.</li>
+                                    <li class="expand">Each Generation now connects together instead of being separate.
+                                        This allows for max efficiency of the PC Box space you have.</li>
+                                    <li class="expand">The PC Box number is now continuous, it no longer resets per
+                                        Generation.</li>
+                                    <li>Getting Started:</li>
+                                    <li class="expand">Added v4.0 changes.</li>
+                                    <li class="expand">Refined information in various sections.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v3.1.1</summary>
+                            <div class="sub-section">
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Banner updated to v3.1.1.</li>
+                                    <li class="expand">Added gender information for Santa Hariyama and Mrs. Hariyama.
+                                    </li>
+                                    <li class="expand">Added updated icons for Castform [Sunny], Castform [Rainy], and
+                                        Castform [Snowy].</li>
+                                    <li class="expand">Added icons for Kubfu, Urshifu [Single Strike], Urshifu [Rapid
+                                        Strike], Basculin [White-Striped], and Basculegion (Male/Female).</li>
+                                    <li>Getting Started:</li>
+                                    <li class="expand">Added v3.1.1 changes.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v3.1</summary>
+                            <div class="sub-section">
+                                <p class="highlight">Two file types (HTML and CSS) have had changes to them and require
+                                    the same version (v3.1) of the files to cooperate properly.</p>
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">Resized the main content section.</li>
+                                    <li class="expand">Updated the Footer.</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Banner updated to v3.1.</li>
+                                    <li class="expand">Added in Pokémon data for Pokémon introduced in Scarlet and
+                                        Violet and The Teal Mask DLC.</li>
+                                    <li class="expand">Fixed icons for Rillaboom, Sinistea, and Polteageist.</li>
+                                    <li class="expand">The Pokémon hover information box width has been expanded due to
+                                        longer names introduced in Pokémon Scarlet and Violet.</li>
+                                    <li class="expand">Added more spacing for Generations with multiple regions in the
+                                        Quick Link sections.</li>
+                                    <li class="expand">Changed display to show two rows of Pokémon per box instead of
+                                        one row.</li>
+                                    <li class="expand">Added icons for Galarian Meowth, Galarian Slowpoke, Galarian
+                                        Slowbro, Galarian Farfetch'd, Galarian Slowking, Solgaleo [Radiant Sun], Lunala
+                                        [Full Moon], Chewtle, Drednaw, Arrokuda, Barraskewda, Perrserker, Sirfetch'd,
+                                        Indeedee (Male/Female), Dreepy, Drakloak, Dragapult, Eternatus, Sprigatito,
+                                        Floragato, and Meowscarada.</li>
+                                    <li>Tracker Ultimate:</li>
+                                    <li class="expand">The hover information box has been updated to include Gender
+                                        information for select Pokémon.</li>
+                                    <li>Getting Started:</li>
+                                    <li class="expand">Added v3.1 changes.</li>
+                                    <li class="expand">Fixed many display problems.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v3.0</summary>
+                            <div class="sub-section">
+                                <p class="highlight">All file types (HTML, CSS, and JavaScript) have had changes to them
+                                    and require the same version (v3.0) of the files to cooperate properly.</p>
+                                <ul class="master">
+                                    <li>General:</li>
+                                    <li class="expand">All files have been renamed. New names are: "GPX+ Shiny Tracker",
+                                        "GPX+ Shiny Tracker Ultimate", "Style", and "Script-ClickProgress".</li>
+                                    <li class="expand">The Favicon has been updated.</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Created a Getting Started HTML file that details all information
+                                        about the project.</li>
+                                    <li class="expand">Banner updated and now includes version number.</li>
+                                    <li class="expand">Quick Jump links have been updated to be more visually appealing.
+                                    </li>
+                                    <li class="expand">Quick Jump links ID names have been changed from Region to
+                                        Generation.</li>
+                                    <li class="expand">Paldea Region section has been added and a Quick Jump link has
+                                        been created.</li>
+                                    <li class="expand">Placeholder icon for unavailable Pokémon has been updated.</li>
+                                    <li class="expand">Added icons for Cramorant, Toxtricity [Amped], Toxtricity [Low
+                                        Key], Sinistea, Polteageist, Hatenna, Hattrem, Hatterene, and Falinks.</li>
+                                    <li class="expand">Removed placeholder forms for Sinistea and Polteageist.</li>
+                                    <li class="expand">Background color for Region sections has been changed to be
+                                        darker.</li>
+                                    <li class="expand">When hovering over a Pokémon icon you now get to see full
+                                        opacity.</li>
+                                    <li class="expand">When hovering over a Pokémon icon a glowing white border will
+                                        outline the image.</li>
+                                    <li class="expand">Hovering over a Pokémon now displays a pop-up box that includes
+                                        their Pokédex number, name, form, and typing.</li>
+                                    <li class="expand">Because of this new feature the (title="") HTML code has been
+                                        replaced with "alt". If a icon has trouble loading it will now display the
+                                        Pokémon's name instead of the icon.</li>
+                                    <li class="expand">The Progress Bar now fully stretches the entire Region section.
+                                    </li>
+                                    <li class="expand">The GPX+ Shiny Tracker now doesn't include any gendered
+                                        difference, it now works like the GPX+ Pokédex. Removed duplicate icons include:
+                                        Hippopotas, Hippowdon, Unfezant, Frillish, Jellicent, Pyroar, Espurr, Indeedee,
+                                        Basculegion, Noctowl [Curator], and Autumn Tropius.</li>
+                                    <li class="expand">Fixed an error which caused Eiscue's [Ice Face] icon not to
+                                        display from v2.5.</li>
+                                    <li class="expand">Fixed "class" duplication code for Present Drifloon.</li>
+                                    <li class="expand">Porygon-T's position has been fixed.</li>
+                                    <li class="expand">Fixed transparency issues for Gengar [Mega], Magikarp, Corsola,
+                                        Corsola [Galarian], Remoraid, Skorupi, Snover, Serperior, Tepig, Pignite,
+                                        Emboar, Dewott, Samurott, Hisuian Samurott, Lillipup, Herdier, Stoutland,
+                                        Purrloin, Liepard, Simisear, Simipour, Tranquill, Unfezant [Male], Unfezant
+                                        [Female], Audino, Leavanny, Maractus, Scrafty, Cinccino, Gothitelle, Sawsbuck
+                                        [Spring], Escavalier, Amoonguss, Frillish [Male], Jellicent [Male], Mienshao,
+                                        Pawniard, Bisharp, Braviary, Durant, Zweilous, Volcarona, Cobalion, Virizion,
+                                        Tornadus [Incarnate], Thundurus [Incarnate], Reshiram, Landorus [Incarnate],
+                                        Kyurem, Meloetta [Aria], Meloetta [Pirouette], Florges [Orange Flower], Florges
+                                        [Blue Flower], and Snowy Girafarig.</li>
+                                    <li class="expand">Added a contributor section and the GPX+ Shiny Tracker Forum
+                                        thread in the Footer.</li>
+                                    <li class="expand">Added a few notes in the HTML and CSS files to better guide you.
+                                    </li>
+                                    <li>Tracker Ultimate:</li>
+                                    <li class="expand">Added appropriate gender symbols to Pokémon with gender
+                                        differences on GPX+ Shiny Tracker Ultimate.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v2.5</summary>
+                            <div class="sub-section">
+                                <ul class="master">
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Added icons for Hisuian Typhlosion, Hisuian Samurott, Hisuian
+                                        Decidueye, and Eiscue [Ice].</li>
+                                    <li class="expand">Added placeholder icons for Pokémon introduced in Pokémon
+                                        Legends: Arceus.</li>
+                                    <li class="expand">Fixed placement of Missingno.</li>
+                                    <li class="expand">Incremented version number.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v2.4</summary>
+                            <div class="sub-section">
+                                <ul class="master">
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Added icons for Impidimp, Morgrem, Grimmsnarl, Glastrier,
+                                        Spectrier, and Nihilego [Parasite].</li>
+                                    <li class="expand">Incremented version number.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v2.3</summary>
+                            <div class="sub-section">
+                                <p class="highlight">Two file types (HTML and CSS) have had changes to them and require
+                                    the same version (v2.3) of the files to cooperate properly.</p>
+                                <ul class="master">
+                                    <li>Shiny Trackers:</li>
+                                    <li class="expand">Added icons for Silicobra, Sandaconda, Rolycoly, Carkol,
+                                        Coalossal, Cufant, Copperajah, Galarian Yamask, Runerigus, Sizzlipede, and
+                                        Centiskorch.</li>
+                                    <li class="expand">Fixed typo for Eiscue [Noice] form.</li>
+                                    <li class="expand">Fixed positioning of Porygon-T and Cherrim [Frost].</li>
+                                    <li class="expand">Changed various positions of HTML.</li>
+                                    <li class="expand">Fixed centering issues.</li>
+                                    <li class="expand">Added progress bar CSS for both Chrome and Firefox.</li>
+                                    <li class="expand">Incremented version number.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v2.2</summary>
+                            <div class="sub-section">
+                                <p class="highlight">Two file types (HTML and CSS) have had changes to them and require
+                                    the same version (v2.2) of the files to cooperate properly.</p>
+                                <p class="highlight">Alternative tracker that includes all gender differences introduced
+                                    thanks to help from Rookie Roo!<br>(If you wish to use this version simply drag the
+                                    file out of the "Alternative Trackers" into the main folder with all the other
+                                    files, otherwise the CSS won't load.)</p>
+                                <ul class="master">
+                                    <li>Shiny Tracker:</li>
+                                    <li class="expand">Added icons for Nickit, Thievul, Clobbopus, and Grapploct.</li>
+                                    <li class="expand">Changed various positions of HTML.</li>
+                                    <li class="expand">Minor adjustment to fix a centering issue that could occur within
+                                        the
+                                        progress bar.</li>
+                                    <li class="expand">Incremented version number.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v2.1</summary>
+                            <div class="sub-section">
+                                <p class="highlight">Two file types (HTML and JavaScript) have had changes to them and
+                                    require the same version (v2.1) of the files to cooperate properly.</p>
+                                <ul class="master">
+                                    <li>Shiny Tracker:</li>
+                                    <li class="expand">Added metadata.</li>
+                                    <li class="expand">Incremented version number.</li>
+                                    <li class="expand">Fixed incorrect retrieval of "notown" state.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v2.0</summary>
+                            <div class="sub-section">
+                                <p class="highlight">All file types (HTML and CSS) have had changes to them and require
+                                    the same version (v2.0) of the files to cooperate properly.</p>
+                                <ul class="master">
+                                    <li>Shiny Tracker:</li>
+                                    <li class="expand">Added Javascript functionality.</li>
+                                    <li class="expand">Changed formatting.</li>
+                                    <li class="expand">Added "Back to top" link to the Quick Jump Menu.</li>
+                                    <li class="expand">Changed ownership from IDs to Class.</li>
+                                    <li class="expand">Tweaked opacity for Pokémon Icons.</li>
+                                    <li class="expand">Updated Footer to include version number and source.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>v1.0</summary>
+                            <div class="sub-section">
+                                <ul class="master">
+                                    <li class="expand">Project launched.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-            </details>
-            <details>
-                <summary>v4.2</summary>
-                <div class="body-small">
-                    <p class="GS">All file types (HTML, CSS, and JavaScript) have had changes to them and require the
-                        same version (v4.0) of the files to cooperate properly.</p>
-                    <div class="subtitle">Everything</div>
-                    <ul class="GS2">
-                        <li>The size of the banner button in the Footer has been reduced.</li>
-                        <li>The Navigation sections will now detect your screen size and shift it's appearance to fit
-                            it. Big thanks to Cycloneblaze!</li>
-                        <li>Incremented version number.</li>
-                        <div class="subtitle">Shiny Trackers</div>
-                        <li>Banners updated to v4.2</li>
-                        <li>The information section has had spelling and grammar errors fixed.</li>
-                        <li>A search function was introduced! Big thanks to Cycloneblaze!</li>
-                        <li>Added icons for Hisuian Growlithe, Hisuian Arcanine, Hisuian Avalugg, Dracozolt, Arctozolt,
-                            Dracovish, Arctovish, Zacian [Hero of Many Battles], Zacian [Crowned Sword], Zamazenta [Hero
-                            of Many Battles], Zamazenta [Crowned Sword], Wyrdeer, Kleavor, Ursaluna, Ursaluna
-                            [Bloodmoon], Quaxly, Quaxwell, Quaquaval, Fidough, Dachsbun, Squawkabilly [Green Plumage],
-                            Squawkabilly [Blue Plumage], Squawkabilly [Yellow Plumage], Squawkabilly [White Plumage],
-                            Maschiff, Mabosstiff, Cyclizar, Greavard, Houndstone, Flamigo, Veluza, Great Tusk, Scream
-                            Tail, Brute Bonnet, Flutter Mane, Slither Wing, Sandy Shocks, and Roaring Moon.</li>
-                        <div class="subtitle">Getting Started</div>
-                        <li>Added v4.2 changes.</li>
-                        <li>Added information on the "Script-SearchBar.js"file in the GitHub Files And Descriptions
-                            section.</li>
-                        <li>Added a "How do I search for Pokémon?" answer in The Help Section.</li>
-                    </ul>
+            </div>
+
+            <div class="infobox-gs">
+                <div class="title" id="Help">Need Help?</div>
+                <div class="section-gs">
+                    <img class="gs" src="Images/Getting Started/Help.png" alt="Help Banner">
+                    <p>Please message me if you want to contribute, have suggestions, or come across any issues! I can
+                        be reached on the forums or on discord (Level-X#4607).</p>
+                    <p>Click on the corresponding question below to expand or collapse the element. To make images
+                        larger: right click, then open in a new tab.</p><br>
+                    <div class="title">Questions You Might Have</div>
+                    <div class="sub-section">
+                        <details>
+                            <summary>Can you give me an example of what PCDex+ looks like?</summary>
+                            <div class="sub-section">
+                                <p class="highlight">Sure! Here is an example of a Kanto collection using the Standard
+                                    Challenge!</p>
+                                <img class="help-1" src="Images/Getting Started/Screenshots/Example.png"
+                                    alt="Example of Kanto Shiny Collection">
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I edit PCDex+ with JavaScript?</summary>
+                            <div class="sub-section">
+                                <p class="highlight">This is the prefered method of adding in your shiny collection!
+                                    Your data will be stored in your browsers cache, but removed if you clear it!</p>
+                                <ul class="master">
+                                    <li>Only step!: Open your challenge of choice in your browser.</li>
+                                    <li class="expand">Next, click on the icons you own to mark them as "owned". You can
+                                        click the icon again to mark it as "notown". The script updates the progress bar
+                                        for you automatically.</li>
+                                    <p class="highlight">Now let's backup your JavaScript changes to your HTML file so
+                                        you have protection if your cache clears!</p>
+                                    <li>Step 1: Clicking the Pokémon icons you own.</li>
+                                    <li class="expand">In this example I marked that I owned the entire Bulbasaur
+                                        evolution line, this includes: Bulbasaur, Ivysaur, Venusaur, Mega Venusaur, and
+                                        Gigantamax Venusaur. Now that I clicked them on my browser their status has
+                                        changed from "notown" to "own".</li>
+                                    <img class="help-3" src="Images/Getting Started/Screenshots/JS-1.png"
+                                        alt="Bulbasaur Example">
+                                    <li>Step 2: Inspect element</li>
+                                    <li class="expand">In order to replace this new data in our HTML file we will need
+                                        to use the "Inspect" feature that's built into our browser. Right-click on empty
+                                        space inside the Living Pokédex section that contains all the Pokémon icons and
+                                        then click "Inspect".</li>
+                                    <img class="help-3" src="Images/Getting Started/Screenshots/JS-2.png"
+                                        alt="Inspect Example">
+                                    <li class="expand">It will then bring up something like this at the bottom of your
+                                        screen. You'll need to find and highlight
+                                        <pre><code>&lt;main id="mark"&gt;</code></pre>
+                                    </li>
+                                    <img class="help-1" src="Images/Getting Started/Screenshots/JS-3.png"
+                                        alt="Saving JavaScript">
+                                    <li>Final Step: Copying the JavaScript changes</li>
+                                    <li class="expand">Right-click on this highlighted section > Copy > Outer HTML.</li>
+                                    <img class="help-2" src="Images/Getting Started/Screenshots/JS-4.png"
+                                        alt="Saving JavaScript 2">
+                                    <li class="expand">This is all the data displayed in the PC icon section, every
+                                        Pokémon. Once you copy the code with the "Inspect" feature you will need to
+                                        replace the code in your HTML file if you want a hard save. This would need to
+                                        be pasted over the start of the same section you copied. All you are doing is
+                                        replacing the old data.</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I edit PCDex+ with HTML?</summary>
+                            <div class="sub-section">
+                                <p class="highlight">It's highly recommended you update your collection through
+                                    JavaScript instead, It's much easier!</p>
+                                <ul class="master">
+                                    <li>Step 1: Choosing a Text Editor.</li>
+                                    <li class="expand">Notepad on Windows or TextEdit on Mac work just fine, but you can
+                                        download a better editor such as Atom, Notepad ++, Sublime Text, or Visual
+                                        Studio Code.</li>
+                                    <li>Step 2: Updating the Pokémon you own.</li>
+                                    <li class="expand">Now that you have your text editor, open your challenge of choice
+                                        in the program. Once you do that, you'll see something like this.</li>
+                                    <img class="help-2" src="Images/Getting Started/Screenshots/HTML-1.png"
+                                        alt="Editing HTML">
+                                    <li class="expand">The only thing you need to worry about changing is the img class.
+                                        By default, every img class is marked as "notown". If you want to register as
+                                        owned, change the img class to "own".</li>
+                                    <li>Step 3: Updating your total completion progress.</li>
+                                    <li class="expand">Close to the top of the HTML pages you'll find the "nav". This is
+                                        where you'll find your collection progress of each Generation.</li>
+                                    <img class="help-2" src="Images/Getting Started/Screenshots/HTML-2.png"
+                                        alt="Editing HTML 2">
+                                    <li class="expand">The two important codes are "value" and "title". The value
+                                        visually raises your progress percent, and the title tells you how many Shinies
+                                        you own when you hover over the progress bar. By default, every value is marked
+                                        as "0" and the titles are marked as "0/#". # represents the total number of
+                                        Pokémon in the respective region. So, if you hatched a Shiny Bulbasaur, you can
+                                        set both 0's to 1.</li>
+                                    <li>Finished!: An example of the final result!</li>
+                                    <li class="expand">In this example, I marked that I owned all of the Pokémon in PC
+                                        Box 1. I also changed the appropriate commands for the progress bar so that it
+                                        visually updates.</li>
+                                    <img class="help-2" src="Images/Getting Started/Screenshots/HTML-3.png"
+                                        alt="End Result">
+                                    <li class="expand">As you can see, the Pokémon are now full color compared to the
+                                        rest of the icons, and the progress bar has been updated. So now when I hover
+                                        over the progress bar I get the desired result!</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I search for Pokémon?</summary>
+                            <div class="sub-section">
+                                <p class="highlight">Just type in the box and click the Find it! button, and you should
+                                    be taken right to the Pokémon!</p>
+                                <ul class="master">
+                                    <li class="expand">The search box looks for the <em>first</em> Pokémon whose name
+                                        starts with what you wrote. It also works in lowercase. So if you type "mag", or
+                                        "Mag", Magnemite will be shown for you, but not Magneton, Magnezone or Magearna.
+                                        But if you type "mage", you'll get right to Magearna! It's like the search text
+                                        always has a wildcard character on the end.</li>
+                                    <li class="expand">You do need to know a Pokémon's name, including form. By typing
+                                        "altaria" you can get to Altaria but also Altaria [Mega], since it has the same
+                                        Pokédex number, so it's right nearby. But you won't get to Altaria
+                                        [Constellation], or Zhenyin, because they are listed under Novelty Pokémon and
+                                        not Generation III. You could find those two by typing "altaria [c", or just
+                                        "zh".</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-            </details>
-            <details>
-                <summary>v4.1</summary>
-                <div class="body-small">
-                    <p class="GS">Two file types (HTML and CSS) have had changes to them and require the same version
-                        (v4.1) of the files to cooperate properly.</p>
-                    <p class="GS">
-                        A new alternative tracker, the Minimalist Edition, has been introduced thanks to help from
-                        Rookie Roo and Isla de Monte Cristo!</p>
-                    <div class="subtitle">Everything</div>
-                    <ul class="GS2">
-                        <li>Incremented version number.</li>
-                        <li>Updated Footer.</li>
-                        <div class="subtitle">Shiny Trackers</div>
-                        <li>Introduced the GPX+ Shiny Tracker Minimalist Edition.</li>
-                        <li>Banners updated to v4.1</li>
-                        <li>Renamed container for section that contains all Pokémon Icons.</li>
-                        <li>Some Pokémon have had their order adjusted, these include: Burmy [Sandy Cloak], Wormadam
-                            [Sandy Cloak], Spiral Shellder, and Omastar [Orchid].</li>
-                        <li>Added an Information section on each version of the Tracker that gives a rundown about it.
-                        </li>
-                        <div class="subtitle">Getting Started</div>
-                        <li>Added v4.1 changes.</li>
-                        <li>Added a link in the Navigation Menu to open up the Minimalist Edition of the Tracker.</li>
-                        <li>Refined information in various sections.</li>
-                        <li>Removed the Miscellaneous Q&A section.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v4.0</summary>
-                <div class="body-small">
-                    <p class="GS">All file types (HTML, CSS, and JavaScript) have had changes to them and require the
-                        same version (v4.0) of the files to cooperate properly.</p>
-                    <div class="subtitle">Everything</div>
-                    <ul class="GS2">
-                        <p class="GS">On December 31, 2024 old icons that are hosted on Imgur will become inaccessible
-                            so please update before then so your Tracker doesn't lose all image access.</p>
-                        <li>Images are no longer using an Imgur link, they now are local like the other files which
-                            makes the page load much quicker.</li>
-                        <li>Changed the main background image and colors.</li>
-                        <li>Text font has been enlarged.</li>
-                        <li>A navigation menu was introduced that follows you as you scroll the page. It now hosts the
-                            links from the previous Quick Jump Menu.</li>
-                        <li>A small Poké Ball icon has been added in front of each link in the new navigation menu.</li>
-                        <li>Added a border on the top of the Footer.</li>
-                        <li>Reduced the size of the Footer.</li>
-                        <li>Fixed various small errors.</li>
-                        <li>Incremented version number.</li>
-                        <div class="subtitle">Shiny Trackers</div>
-                        <li>Changed the file name for the Standard Tracker.</li>
-                        <li>Adjusted the titles of Trackers.</li>
-                        <li>Banner text changed and updated to version 4.0.</li>
-                        <li>Placeholder data is no longer counted towards completion progress.</li>
-                        <li>The Pokémon hover information box width has been expanded due to larger text font.</li>
-                        <li>Added icons for Gigantamax Venusaur, Gigantamax Charizard, Gigantamax Blastoise, Gigantamax
-                            Butterfree, Gigantamax Pikachu, Gigantamax Meowth, Gigantamax Machamp, Gigantamax Gengar,
-                            Gigantamax Kingler, Hisuian Voltorb, Hisuian Electrode, Gigantamax Lapras, Gigantamax Eevee,
-                            Gigantamax Snorlax, Galarian Articuno, Galarian Zapdos, Galarian Moltres, Paldean Wooper,
-                            Hisuian Qwilfish, Hisuian Lilligant, Gigantamax Garbodor, Hisuian Zorua, Hisuian Zoroark,
-                            Hisuian Braviary, Hisuian Sliggoo, Hisuian Goodra, Necrozma [Ultra Burst], Gigantamax
-                            Melmetal, Gigantamax Rillaboom, Gigantamax Cinderace, Gigantamax Inteleon, Gigantamax
-                            Corviknight, Gigantamax Orbeetle, Gigantamax Drednaw, Gigantamax Coalossal, Gigantamax
-                            Flapple, Gigantamax Appletun, Gigantamax Sandaconda, Cramorant [Gulping], Cramorant
-                            [Gorging], Gigantamax Toxtricity, Gigantamax Centiskorch, Gigantamax Hatterene, Gigantamax
-                            Grimmsnarl, Milcery, Alcremie [Strawberry], Alcremie [Berry], Alcremie [Love], Alcremie
-                            [Star], Alcremie [Clover], Alcremie [Flower], Alcremie [Ribbon], Gigantamax Alcremie, Eiscue
-                            [Noice Face], Gigantamax Copperajah, Gigantamax Duraludon, Eternamax Eternatus, Gigantamax
-                            Urshifu [Single Strike Style], Gigantamax Urshifu [Rapid Strike Style], Regieleki,
-                            Regidrago, Overqwil, Fuecoco, Crocalor, Skeledirge, Lechonk, Oinkologne (Male/Female),
-                            Tarountula, Spidops, Pawmi, Pawmo, Pawmot, Clodsire, Dipplin, and Hydrapple.</li>
-                        <li>Removed unneeded placeholder data.</li>
-                        <li>Added placeholder data for Pokémon introduced in Scarlet and Violet: The Indigo Disk.</li>
-                        <li>Added a background to the PC Box number display.</li>
-                        <li>The completion progress bars of all Generations have been placed inside of the new
-                            navigation menu.</li>
-                        <li>Each Generation now connects together instead of being separate. This allows for max
-                            efficiency of the PC Box space you have.</li>
-                        <li>The PC Box number is now continuous, it no longer resets per Generation.</li>
-                        <div class="subtitle">Getting Started</div>
-                        <li>Added v4.0 changes.</li>
-                        <li>Refined information in various sections.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v3.1.1</summary>
-                <div class="body-small">
-                    <div class="subtitle">Everything</div>
-                    <ul class="GS2">
-                        <li>Incremented version number.</li>
-                        <div class="subtitle">Shiny Trackers</div>
-                        <li>Banner updated to v3.1.1.</li>
-                        <li>Added gender information for Santa Hariyama and Mrs. Hariyama.</li>
-                        <li>Added updated icons for Castform [Sunny], Castform [Rainy], and Castform [Snowy].</li>
-                        <li>Added icons for Kubfu, Urshifu [Single Strike], Urshifu [Rapid Strike], Basculin
-                            [White-Striped], and Basculegion (Male/Female).</li>
-                        <div class="subtitle">Getting Started</div>
-                        <li>Added v3.1.1 changes.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v3.1</summary>
-                <div class="body-small">
-                    <p class="GS">Two file types (HTML and CSS) have had changes to them and require the same version
-                        (v3.1) of the files to cooperate properly.</p>
-                    <div class="subtitle">Everything</div>
-                    <ul class="GS2">
-                        <li>Resized the main content section.</li>
-                        <li>Updated the Footer.</li>
-                        <li>Incremented version number.</li>
-                        <div class="subtitle">Shiny Trackers</div>
-                        <li>Banner updated to v3.1.</li>
-                        <li>Added in Pokémon data for Pokémon introduced in Scarlet and Violet and The Teal Mask DLC.
-                        </li>
-                        <li>Fixed icons for Rillaboom, Sinistea, and Polteageist.</li>
-                        <li>The Pokémon hover information box width has been expanded due to longer names introduced in
-                            Pokémon Scarlet and Violet.</li>
-                        <li>Added more spacing for Generations with multiple regions in the Quick Link sections.</li>
-                        <li>Changed display to show two rows of Pokémon per box instead of one row. </li>
-                        <li>Added icons for Galarian Meowth, Galarian Slowpoke, Galarian Slowbro, Galarian Farfetch'd,
-                            Galarian Slowking, Solgaleo [Radiant Sun], Lunala [Full Moon], Chewtle, Drednaw, Arrokuda,
-                            Barraskewda, Perrserker, Sirfetch'd, Indeedee (Male/Female), Dreepy, Drakloak, Dragapult,
-                            Eternatus, Sprigatito, Floragato, and Meowscarada.</li>
-                        <div class="subtitle">Tracker Ultimate</div>
-                        <li>The hover information box has been updated to include Gender information for select Pokémon.
-                        </li>
-                        <div class="subtitle">Getting Started</div>
-                        <li>Added v3.1 changes.</li>
-                        <li>Fixed many display problems.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v3.0</summary>
-                <div class="body-small">
-                    <p class="GS">All file types (HTML, CSS, and JavaScript) have had changes to them and require the
-                        same version (v3.0) of the files to cooperate properly.</p>
-                    <div class="subtitle">Everything</div>
-                    <ul class="GS2">
-                        <li>All files have been renamed. New names are: "GPX+ Shiny Tracker", "GPX+ Shiny Tracker
-                            Ultimate", "Style", and "Script-ClickProgress".</li>
-                        <li>The Favicon has been updated.</li>
-                        <li>Incremented version number.</li>
-                        <div class="subtitle">Shiny Trackers</div>
-                        <li>Created a Getting Started HTML file that details all information about the project.</li>
-                        <li>Banner updated and now includes version number.</li>
-                        <li>Quick Jump links have been updated to be more visually appealing.</li>
-                        <li>Quick Jump links ID names have been changed from Region to Generation.</li>
-                        <li>Paldea Region section has been added and a Quick Jump link has been created.</li>
-                        <li>Placeholder icon for unavailable Pokémon has been updated.</li>
-                        <li>Added icons for Cramorant, Toxtricity [Amped], Toxtricity [Low Key], Sinistea, Polteageist,
-                            Hatenna, Hattrem, Hatterene, and Falinks.</li>
-                        <li>Removed placeholder forms for Sinistea and Polteageist.</li>
-                        <li>Background color for Region sections has been changed to be darker.</li>
-                        <li>When hovering over a Pokémon icon you now get to see full opacity.</li>
-                        <li>When hovering over a Pokémon icon a glowing white border will outline the image.</li>
-                        <li>Hovering over a Pokémon now displays a pop-up box that includes their Pokédex number, name,
-                            form, and typing.</li>
-                        <li>Because of this new feature the (title="") HTML code has been replaced with "alt". If a icon
-                            has trouble loading it will now display the Pokémon's name instead of the icon.</li>
-                        <li>The Progress Bar now fully stretches the entire Region section.</li>
-                        <li>The GPX+ Shiny Tracker now doesn't include any gendered difference, it now works like the
-                            GPX+ Pokédex. Removed duplicate icons include: Hippopotas, Hippowdon, Unfezant, Frillish,
-                            Jellicent, Pyroar, Espurr, Indeedee, Basculegion, Noctowl [Curator], and Autumn Tropius.
-                        </li>
-                        <li>Fixed an error which caused Eiscue's [Ice Face] icon not to display from v2.5.</li>
-                        <li>Fixed "class" duplication code for Present Drifloon.</li>
-                        <li>Porygon-T's position has been fixed.</li>
-                        <li>Fixed transparency issues for Gengar [Mega], Magikarp, Corsola, Corsola [Galarian],
-                            Remoraid, Skorupi, Snover, Serperior, Tepig, Pignite, Emboar, Dewott, Samurott, Hisuian
-                            Samurott, Lillipup, Herdier, Stoutland, Purrloin, Liepard, Simisear, Simipour, Tranquill,
-                            Unfezant [Male], Unfezant [Female], Audino, Leavanny, Maractus, Scrafty, Cinccino,
-                            Gothitelle, Sawsbuck [Spring], Escavalier, Amoonguss, Frillish [Male], Jellicent [Male],
-                            Mienshao, Pawniard, Bisharp, Braviary, Durant, Zweilous, Volcarona, Cobalion, Virizion,
-                            Tornadus [Incarnate], Thundurus [Incarnate], Reshiram, Landorus [Incarnate], Kyurem,
-                            Meloetta [Aria], Meloetta [Pirouette], Florges [Orange Flower], Florges [Blue Flower], and
-                            Snowy Girafarig.</li>
-                        <li>Added a contributor section and the GPX+ Shiny Tracker Forum thread in the Footer.</li>
-                        <li>Added a few notes in the HTML and CSS files to better guide you.</li>
-                        <div class="subtitle">Tracker Ultimate</div>
-                        <li>Added appropriate gender symbols to Pokémon with gender differences on GPX+ Shiny Tracker
-                            Ultimate.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v2.5</summary>
-                <div class="body-small">
-                    <div class="subtitle">Shiny Trackers</div>
-                    <ul class="GS2">
-                        <li>Added icons for Hisuian Typhlosion, Hisuian Samurott, Hisuian Decidueye, and Eiscue [Ice].
-                        </li>
-                        <li>Added placeholder icons for Pokémon introduced in Pokémon Legends: Arceus.</li>
-                        <li>Fixed placement of Missingno.</li>
-                        <li>Incremented version number.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v2.4</summary>
-                <div class="body-small">
-                    <div class="subtitle">Shiny Trackers</div>
-                    <ul class="GS2">
-                        <li>Added icons for Impidimp, Morgrem, Grimmsnarl, Glastrier, Spectrier, and Nihilego
-                            [Parasite].</li>
-                        <li>Incremented version number.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v2.3</summary>
-                <div class="body-small">
-                    <p class="GS">Two file types (HTML and CSS) have had changes to them and require the same version
-                        (v2.3) of the files to cooperate properly.</p>
-                    <div class="subtitle">Shiny Trackers</div>
-                    <ul class="GS2">
-                        <li>Added icons for Silicobra, Sandaconda, Rolycoly, Carkol, Coalossal, Cufant, Copperajah,
-                            Galarian Yamask, Runerigus, Sizzlipede, and Centiskorch.</li>
-                        <li>Fixed typo for Eiscue [Noice] form.</li>
-                        <li>Fixed positioning of Porygon-T and Cherrim [Frost].</li>
-                        <li>Changed various positions of HTML.</li>
-                        <li>Fixed centering issues.</li>
-                        <li>Added progress bar CSS for both Chrome and Firefox.</li>
-                        <li>Incremented version number.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v2.2</summary>
-                <div class="body-small">
-                    <p class="GS">Two file types (HTML and CSS) have had changes to them and require the same version
-                        (v2.2) of the files to cooperate properly.</p>
-                    <div class="subtitle">Shiny Tracker</div>
-                    <ul class="GS2">
-                        <li>Added icons for Nickit, Thievul, Clobbopus, and Grapploct.</li>
-                        <li>Changed various positions of HTML.</li>
-                        <li>Minor adjustment to fix a centering issue that could occur within the progress bar.</li>
-                        <li>Incremented version number.</li>
-                    </ul>
-                    <p class="GS">
-                        Alternative tracker that includes all gender differences introduced thanks to help from Rookie
-                        Roo!<br>(If you wish to use this version simply drag the file out of the "Alternative Trackers"
-                        into the main folder with all the other files, otherwise the CSS won't load.)
-                    </p>
-                </div>
-            </details>
-            <details>
-                <summary>v2.1</summary>
-                <div class="body-small">
-                    <p class="GS">Two file types (HTML and JavaScript) have had changes to them and require the same
-                        version (v2.1) of the files to cooperate properly.</p>
-                    <div class="subtitle">Shiny Tracker</div>
-                    <ul class="GS2">
-                        <li>Added metadata.</li>
-                        <li>Incremented version number.</li>
-                        <li>Fixed incorrect retrieval of "notown" state.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v2.0</summary>
-                <div class="body-small">
-                    <p class="GS">All file types (HTML and CSS) have had changes to them and require the same version
-                        (v2.0) of the files to cooperate properly.</p>
-                    <div class="subtitle">Shiny Tracker</div>
-                    <ul class="GS2">
-                        <li>Added Javascript functionality.</li>
-                        <li>Changed formatting.</li>
-                        <li>Added "Back to top" link to the Quick Jump Menu.</li>
-                        <li>Changed ownership from IDs to Class.</li>
-                        <li>Tweaked opacity for Pokémon Icons.</li>
-                        <li>Updated Footer to include version number and source.</li>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>v1.0</summary>
-                <div class="body-small">
-                    <ul class="GS2">
-                        <li>Project launched.</li>
-                    </ul>
-                </div>
-            </details>
+            </div>
+        </main>
+    </div>
+
+    <div class="infobox">
+        <div class="section links">
+            <ul>
+                <li class="master"> <a href="#Top">You've reached the end of the page! Return to the top?</a></li>
+            </ul>
         </div>
-        <div class="head">The Help Section</div>
-        <div class="body">
-            <img src="Images/Getting Started/Help.png" alt="Help Banner" id="Help">
-            <p class="GS">
-                The below information may look like a lot at first glance because I'm trying to be thorough, but
-                everything is super simple to do! Please click on the corresponding question below to expand or collapse
-                the element. To make images larger, open them in a new tab.
-            </p>
-            <details>
-                <summary>Can you give me an example of how the tracker looks like?</summary>
-                <div class="body-small">
-                    <p>Here is a test example of a Kanto collection!</p>
-                    <img class="GS" src="Images/Getting Started/Screenshots/Example.png">
-                </div>
-            </details>
-            <details>
-                <summary>How do I edit the GPX+ Shiny Tracker with HTML?</summary>
-                <div class="body-small">
-                    <ul class="GS">
-                        <li>Step 1: Choosing a Text Editor.</li>
-                        <p>Notepad on Windows or TextEdit on Mac work just fine, but you can download a better editor
-                            such as Atom, Notepad ++, Sublime Text, or Visual Studio Code.</p>
-                        <li>Step 2: Updating the Pokémon you own.</li>
-                        <p>Now that you have your text editor, open your Shiny Tracker of choice in the program. Once
-                            you do that, you'll see something like this.</p>
-                        <img class="GS2" src="Images/Getting Started/Screenshots/HTML-1.png">
-                        <p>The only thing you need to worry about changing is the img class. By default, every img class
-                            is marked as "notown". If you want to register as owned, change the img class to "own".</p>
-                        <li>Step 3: Updating your total completion progress.</li>
-                        <p>Close to the top of the HTML pages you'll find the "header". This is where you'll find your
-                            collection progress of each Generation.</p>
-                        <img class="GS2" src="Images/Getting Started/Screenshots/HTML-2.png">
-                        <p>The two important codes are "value" and "title". The value visually raises your progress
-                            percent, and the title tells you how many Shinies you own when you hover over the progress
-                            bar. By default, every value is marked as "0" and the titles are marked as "0/#". #
-                            represents the total number of Pokémon in the respective region. So, if you hatched a Shiny
-                            Bulbasaur, you can set both 0's to 1.</p>
-                        <li>Finished!: An example of the final result!</li>
-                        <p>In this example, I marked that I owned all of the Pokémon in PC Box 1. I also changed the
-                            appropriate commands for the progress bar so that it visually updates.</p>
-                        <img class="GS" src="Images/Getting Started/Screenshots/HTML-3.png">
-                        <p>As you can see, the Pokémon are now full color compared to the rest of the icons, and the
-                            progress bar has been updated. So now when I hover over the progress bar I get the desired
-                            result!</p>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>How do I edit the GPX+ Shiny Tracker with JavaScript?</summary>
-                <div class="body-small">
-                    <p class="GS">Using this method stores your data in your browser. The data is removed if you clear
-                        your browser cache.</p>
-                    <p>With JavaScript, editing the tracker is simple. Just open your Shiny Tracker of choice in your
-                        browser and click on the icons you own to mark them as "owned". You can click the icon again to
-                        mark it as "notown". The script updates the progress bar for you automatically.</p>
-                    <hr>
-                    <p class="GS">Let's backup your JavaScript changes to your HTML file!</p>
-                    <ul class="GS">
-                        <li>Step 1: Clicking the Pokémon icons you own.</li>
-                        <p>In this example I marked that I owned the entire Bulbasaur evolution line, this includes:
-                            Bulbasaur, Ivysaur, Venusaur, Mega Venusaur, and Gigantamax Venusaur. Now that I clicked
-                            them on my browser their status has changed from "notown" to "own".</p>
-                        <img class="GS" src="Images/Getting Started/Screenshots/JS-1.png">
-                        <li>Step 2: Inspect element</li>
-                        <p>In order to replace this new data in our HTML file we will need to use the "Inspect" feature
-                            that's built into our browser. Right-click on empty space inside the Living Pokédex section
-                            that contains all the Pokémon icons and then click "Inspect".</p>
-                        <img class="GS3" src="Images/Getting Started/Screenshots/JS-2.png">
-                        <p>It will then bring up something like this at the bottom of your screen.</p>
-                        <img class="GS" src="Images/Getting Started/Screenshots/JS-3.png">
-                        <p>You'll see it highlighted over "div class body". This is exactly what we intend, because it
-                            captures all the stored data from every Generation including the Novelty Pokémon.</p>
-                        <li>Final Step: Copying the JavaScript changes</li>
-                        <p>Right-click on this highlighted section > Copy > Outer HTML.</p>
-                        <img class="GS" src="Images/Getting Started/Screenshots/JS-4.png">
-                        <p>As said above, this is all the data displayed in the PC icon section, every Pokémon. Once you
-                            copy the code with the "Inspect" feature you will need to replace the code in your HTML file
-                            if you want a hard save. This would be the start of the "div class body" section through the
-                            end of the "div" closing tag under the Novelty section.</p>
-                    </ul>
-                </div>
-            </details>
-            <details>
-                <summary>How do I search for Pokémon?</summary>
-                <div class="body-small">
-                    <p>Just type in the box and click the Find it! button, and you should be taken right to the Pokémon!
-                    </p>
-                    <p>The search box looks for the <em>first</em> Pokémon whose name starts with what you wrote. It
-                        also works in lowercase. So if you type "mag", or "Mag", Magnemite will be shown for you, but
-                        not Magneton, Magnezone or Magearna. But if you type "mage", you'll get right to Magearna! It's
-                        like the search text always has a wildcard character on the end.</p>
-                    <p>You do need to know a Pokémon's name, including form. By typing "altaria" you can get to Altaria
-                        but also Altaria [Mega], since it has the same Pokédex number, so it's right nearby. But you
-                        won't get to Altaria [Constellation], or Zhenyin, because they are listed under Novelty Pokémon
-                        and not Generation III. You could find those two by typing "altaria [c", or just "zh".</p>
-                </div>
-            </details>
-        </div>
-        <div class="head">Thank You!</div>
-        <div class="body">
-            <img src="Images/Getting Started/Thanks.png" alt="Thank You Banner" id="Thanks">
-            <p class="GS">
-                Thank you to all who end up finding any use for this Tracker! A big thank you to Cycloneblaze for adding
-                the JavaScript feature, thank you to Rookie Roo for giving ideas and helping with the creation of the
-                Ultimate and Minimalist Editions of the Tracker, and to Isla de Monte Cristo for helping with the
-                creation of the Minimalist Edition of the Tracker! This tool is easily customizable if you know some
-                basic HTML and CSS. Please feel free to share any creations you might make from or for this tool!
-            </p>
-            <details>
-                <summary>Did you know?</summary>
-                <div class="body-small">
-                    <p>While working on this project, I learned that the GPX+ Pokédex actually tells you which Pokémon
-                        you own in your PC. Take a look at this:</p>
-                    <img class="GS" src="Images/Getting Started/Screenshots/Pokédex.png">
-                    <p>You see how on Bulbasaur's normal icon the background is light and on the shiny icon the
-                        background is dark? Well, the lighter background indicates that you do not currently own the
-                        Pokémon, while the darker background indicates that you do.</p>
-                </div>
-            </details>
-            <p class="GS">I made some buttons you can use to share both the GPX+ Discord server and the GPX+ Shiny
-                Tracker. Feel free to use them in your forum signature if you choose!</p>
-            <img class="GS4" src="Images/Getting Started/Discord.png">
-            <img class="GS4" src="Images/Getting Started/Tracker.png">
-        </div>
-    </main>
+    </div>
+
     <footer>
-        <img class="left" src="Images/Main/Sparkles.png">
-        <p>
-            Version: 4.4 | Last Updated: August 2025<br>
-            Source:
-            <a href="https://github.com/Level-X/GPX-Shiny-Tracker" target="_blank">GPX+ Shiny Tracker on GitHub</a> |
-            <a href="https://forums.gpx.plus/index.php?showtopic=78892" target="_blank">GPX+ Forum Thread</a><br>
-            Contributors:
-            <a href="https://cycloneblaze.net/" target="_blank">Cycloneblaze - JavaScript Programmer</a>. Visit him with
-            the button below!<br>
-            <a href="https://cycloneblaze.net/"><img src="Images/Main/Cycloneblaze.png"></a><br>
-            <a href="https://gpx.plus/user/Rookie+Roo" target="_blank">Rookie Roo - Help with the Ultimate and
-                Minimalist Editions</a>. |
-            <a href="https://gpx.plus/user/Isla+de+Monte+Cristo" target="_blank">Isla de Monte Cristo - Help with the
-                Minimalist Edition</a>.
-        </p>
-        <img class="right" src="Images/Main/Sparkles-Reversed.png">
+        <div class="footer-container">
+            <div class="footer-section">
+                <a href="Getting Started.html"><img class="logo" src="Images/Main/PCDex+-Icon.png" alt="Logo"></a>
+            </div>
+
+            <div class="project-links">
+                <h4>PCDex+ v5</h4>
+                <ul>
+                    <li><a href="Getting Started.html#PCDex">The Project</a></li>
+                    <li><a href="https://github.com/Level-X/PCDex-Plus" target="_blank">GitHub</a></li>
+                    <li><a href="https://forums.gpx.plus/index.php?showtopic=78892" target="_blank">GPX+
+                            Thread</a></li>
+                </ul>
+                <a href="https://cycloneblaze.net/" target="_blank"><img class="cyclone"
+                        src="Images/Main/Cycloneblaze.png" alt="Cycloneblaze"></a>
+            </div>
+        </div>
     </footer>
 </body>
 
