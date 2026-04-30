@@ -4,7 +4,7 @@
 
   
 # Downloads
-<p align="center">The latest version of the tracker (currently v4.4) will always be avaiable on the <a href="https://github.com/Level-X/PCDex-Plus">main branch</a> or <a href="https://github.com/Level-X/PCDex-Plus/archive/refs/heads/main.zip">direct download</a>.<br>
+<p align="center">The latest version of the tracker (currently v5) will always be avaiable on the <a href="https://github.com/Level-X/PCDex-Plus">main branch</a> or <a href="https://github.com/Level-X/PCDex-Plus/archive/refs/heads/main.zip">direct download</a>.<br>
 [<b><i>Starting from v2.0 Javascript functions by <a href="https://github.com/Cycloneblaze">Cycloneblaze</a> are included.</i></b>]</p>
 <p align="center"><b>It is always recommended that you download the current, most up-to-date version.</b></p>
 
