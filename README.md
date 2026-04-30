@@ -1,10 +1,10 @@
-# GPX+ Shiny Tracker [v4.4]
-<p align="center"><img src="https://i.imgur.com/8lFWpy0.png"></p>
+# GPX+ Shiny Tracker [v5]
+<p align="center"><img src="https://i.imgur.com/qmmzZVO.png"></p>
 
 
   
 # Downloads
-<p align="center">The latest version of the tracker (currently v4.4) will always be avaiable on the <a href="https://github.com/Level-X/GPX-Shiny-Tracker">main branch</a> or <a href="https://github.com/Level-X/GPX-Shiny-Tracker/archive/refs/heads/main.zip">direct download</a>.<br>
+<p align="center">The latest version of the tracker (currently v4.4) will always be avaiable on the <a href="https://github.com/Level-X/PCDex-Plus">main branch</a> or <a href="https://github.com/Level-X/PCDex-Plus/archive/refs/heads/main.zip">direct download</a>.<br>
 [<b><i>Starting from v2.0 Javascript functions by <a href="https://github.com/Cycloneblaze">Cycloneblaze</a> are included.</i></b>]</p>
 <p align="center"><b>It is always recommended that you download the current, most up-to-date version.</b></p>
 
@@ -12,7 +12,50 @@
 
 # Changelog
 <h1 align="center">Current - v4.4</h1>
-<h4>Everything:</h4>
+<h4>General:</h4>
+- <i>The project name has been changed to PCDex+, which is a little spin on PC, Pokédex, and GPX+!</i><br>
+- <i>Going forward there are three challenges: Basic, Standard, and Ultimate. Basic will be represented with a Poké Ball, Standard with a Great Ball, Ultimate with an Ultra Ball, and the Getting Started page will be represented with a Master Ball.</i><br>
+- <i>Two themes have been introduced, Sun theme (light mode) and Moon theme (dark mode).</i><br>
+- <i>The Favicon has been updated.</i><br>
+- <i>The main banner has been condensed and now appears in the top left corner of each page with its own flair.</i><br>
+- <i>The footer has been updated to be more simplified and clean.</i><br>
+- <i>The main background has been updated.</i><br>
+- <i>All sections now have a secondary background.</i><br>
+- <i>You'll now get the option to return to the top of the page once you reached the bottom.</i><br>
+- <i>Incremented version number.</i><br>
+<h4>All Challenges:</h4>
+- <i>A filter system has been introduced! Have fun searching by: Generation, Type, Rarity, Form, Gender, Color, Egg Steps, Egg Groups, and Ownership.</i><br>
+- <i>"Cheats" have been introduced! Become a Shiny Master with the click of a button, restore previous data, or wipe all data!</i><br>
+- <i>The search bar positioning has been adjusted.</i><br>
+- <i>The UI has been drastically improved, much more PC like than before!</i><br>
+- <i>The Challenge Information sections have been expanded to contain more detail.</i><br>
+- <i>The Pokémon summary has been expanded to include Generation and Rarity information.</i><br>
+- <i>The Pokémon summary has been updated to include proper padding between elements.</i><br>
+- <i>The Pokémon type icons have been updated.</i><br>
+- <i>The Pokémon placeholder data icon has been updated.</i><br>
+- <i>Updated icons for: Hippopotas (Female), Hippowdon (Female), Arceus [Dragon], Arceus [Dark], Arceus [Ground], Arceus [Fighting], Arceus [Fire], Arceus [Ice], Arceus [Bug], Arceus [Steel], Arceus [Grass], Arceus [Psychic], Arceus [Fairy], Arceus [Flying], Arceus [Water], Arceus [Ghost], Arceus [Rock], Arceus [Poison], Arceus [Electric], Purrloin, Toxtricity [Amped], Toxtricity [Low Key], Hatenna, Hattrem, Hatterene, Alcremie [Strawberry], Alcremie [Berry], Alcremie [Love], Alcremie [Star], Alcremie [Clover], Alcremie [Flower], Alcremie [Ribbon], Falinks, Zacian [Hero of Many Battles], Zacian [Crowned Sword], Zamazenta [Hero of Many Battles], Zamazenta [Crowned Shield], Urshifu [Single Strike], Urshifu [Rapid Strike], Overqwil, Sprigatito, Floragato, Meowscarada, Fuecoco, Skeledirge, Quaxly, Quaxwell, Quaquaval, Spidops, Maschiff, Mabosstiff, Veluza, Dipplin, Hydrapple, and Eevee [Heart].</i><br>
+- <i>Added new data for: Pecharunt [Closed], Swablu [Celestial], Altaria [Celestial], Regidiva, Professor Tangrowth, and Autumn Leafeon.</i><br>
+- <i>Added icons for: Nymble, Lokix, Wattrel, Kilowattrel, Bramblin, Brambleghast, Toedscool, Toedscruel, Rellor, Rabsca, Flittle, Espathra, Wiglett, Wugtrio, Glimmet, Glimmora, Cetoddle, Cetitan, Dondozo, Gimmighoul [Roaming], Gimmighoul [Chest], Gholdengo, Wo-Chien, Chien-Pao, Ting-Lu, Chi-Yu, Okidogi, Munkidori, Fezandipiti, Archaludon, Pecharunt, Pecharunt [Closed], Swablu [Celestial], Altaria [Celestial], Regidiva, Professor Tangrowth, and Autumn Leafeon.</i><br>
+- <i>Added placeholder data for the new Mega Evolutions released in Pokémon Legends: Z-A.</i><br>
+- <i>Added Generation 10 placeholder data.</i><br>
+- <i>Fixed a type issue with Morpeko [Hangry Mode]. Previously it displayed its type in reverse order.</i><br>
+- <i>Fixed a placement issue with Gimmighoul [Roaming] and Gimmighoul [Chest] forms. Previously they appeared in reverse order.</i><br>
+- <i>Fixed a spelling mistake with Magikarp [Gray].</i><br>
+<h4>Basic Challenge:</h4>
+- <i>Reduced the amount of Pokémon needed.</i><br>
+- <i>Added more Key emoji icons to show when a Pokémon can reverse its form change or if it requires DNA Splicers.</i><br>
+- <i>Fixed a mistake of Pulian not having Pokédex requirement information on its Summary.</i><br>
+<h4>Getting Started:</h4>
+- <i>Slightly updated the UI.</i><br>
+- <i>Removed nonessential sections.</i><br>
+- <i>Updated Help information and screenshots.</i><br>
+- <i>Added v5 changes.</i></p>
+
+
+<br><br>
+<h1 align="center">Old Changes</h1>
+<h2 align="center">v4.4</h2>
+<h4>General:</h4>
 - <i>Incremented version number.</i><br>
 <h4>Shiny Trackers:</h4>
 - <i>Banners updated to v4.4</i><br>
@@ -20,11 +63,8 @@
 <h4>Getting Started:</h4>
 - <i>Added v4.4 changes.</i></p>
 
-
-<br><br>
-<h1 align="center">Old Changes</h1>
-<h1 align="center">Current - v4.3</h1>
-<h4>Everything:</h4>
+<h2 align="center">v4.3</h2>
+<h4>General:</h4>
 - <i>Incremented version number.</i><br>
 <h4>Shiny Trackers:</h4>
 - <i>Banners updated to v4.3</i><br>
@@ -36,7 +76,7 @@
 
 <h2 align="center">v4.2</h2>
 <b>All file types (HTML, CSS, and JavaScript) have had changes to them and require the same version (v4.2) of the files to cooperate properly.</b><br>
-<h4>Everything:</h4>
+<h4>General:</h4>
 - <i>The size of the banner button in the Footer has been reduced.</i><br>
 - <i>The Navigation sections will now detect your screen size and shift it's appearance to fit it. Big thanks to Cycloneblaze!</i><br>
 - <i>Incremented version number.</i><br>
@@ -54,7 +94,7 @@
 <h2 align="center">v4.1</h2>
 <b>Two file types (HTML and CSS) have had changes to them and require the same version (v4.1) of the files to cooperate properly.</b><br>
 <b>A new alternative tracker, the Minimalist Edition, has been introduced thanks to help from Rookie Roo and Isla de Monte Cristo!</b>
-<h4>Everything:</h4>
+<h4>General:</h4>
 - <i>Incremented version number.</i><br>
 - <i>Updated Footer.</i><br>
 <h4>Shiny Trackers:</h4>
@@ -72,7 +112,7 @@
 
 <h2 align="center">v4.0</h2>
 <b>All file types (HTML, CSS, and JavaScript) have had changes to them and require the same version (v4.0) of the files to cooperate properly.</b>
-<h4>Everything:</h4>
+<h4>General:</h4>
 <b>On December 31, 2024 old icons that are hosted on Imgur will become inaccessible so please update before then so your Tracker doesn't lose all image access.</b><br><br>
 - <i>Images are no longer using an Imgur link, they now are local like the other files which makes the page load much quicker.</i><br>
 - <i>Changed the main background image and colors.</i><br>
@@ -102,7 +142,7 @@
 
 
 <h2 align="center">v3.1.1</h2>
-<h4>Everything:</h4>
+<h4>General:</h4>
 - <i>Incremented version number.</i><br>
 <h4>Shiny Trackers:</h4>
 - <i>Banner updated to v3.1.1.</i><br>
@@ -115,7 +155,7 @@
 
 <h2 align="center">v3.1</h2>
 <b>Two file types (HTML and CSS) have had changes to them and require the same version (v3.1) of the files to cooperate properly.</b>
-<h4>Everything:</h4>
+<h4>General:</h4>
 - <i>Resized the main content section.</i><br>
 - <i>Updated the Footer.</i><br>
 - <i>Incremented version number.</i><br>
@@ -136,7 +176,7 @@
 
 <h2 align="center">v3.0</h2>
 <b>All file types (HTML, CSS, and JavaScript) have had changes to them and require the same version (v3.0) of the files to cooperate properly.</b>
-<h4>Everything:</h4>
+<h4>General:</h4>
 - <i>All files have been renamed. New names are: "GPX+ Shiny Tracker", "GPX+ Shiny Tracker Ultimate", "Style", and "Script-ClickProgress".</i><br>
 - <i>The Favicon has been updated.</i><br>
 - <i>Incremented version number.</i><br>
