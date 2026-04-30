@@ -11,7 +11,7 @@
 
 
 # Changelog
-<h1 align="center">Current - v4.4</h1>
+<h1 align="center">Current - v5</h1>
 <h4>General:</h4>
 - <i>The project name has been changed to PCDex+, which is a little spin on PC, Pokédex, and GPX+!</i><br>
 - <i>Going forward there are three challenges: Basic, Standard, and Ultimate. Basic will be represented with a Poké Ball, Standard with a Great Ball, Ultimate with an Ultra Ball, and the Getting Started page will be represented with a Master Ball.</i><br>
