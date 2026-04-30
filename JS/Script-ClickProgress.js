@@ -22,7 +22,7 @@ function countProgress(generation) {
             // The progress bars are all in order in a div, so just get the first (0th) one.
             progGen1.setAttribute("value", ownedGen1.length);
             progGen1.setAttribute("title", ownedGen1.length.toString().concat("/", elemsGen1.length.toString()));
-            progGen1.setAttribute("max",   elemsGen1.length);
+            progGen1.setAttribute("max", elemsGen1.length);
             /* Set the values for the progress bars according to the number of Pokémon to be clicked. This
             ensures the progress bars are correct. */
             break;
@@ -32,7 +32,7 @@ function countProgress(generation) {
             let progGen2 = document.getElementById('progressBars').getElementsByTagName('progress')[1];
             progGen2.setAttribute("value", ownedGen2.length);
             progGen2.setAttribute("title", ownedGen2.length.toString().concat("/", elemsGen2.length.toString()));
-            progGen2.setAttribute("max",   elemsGen2.length);
+            progGen2.setAttribute("max", elemsGen2.length);
             break;
         case 'Gen3':
             let elemsGen3 = document.querySelectorAll('.Gen3 > img:not([src="Images/Pokémon/0.png"])');
@@ -40,7 +40,7 @@ function countProgress(generation) {
             let progGen3 = document.getElementById('progressBars').getElementsByTagName('progress')[2];
             progGen3.setAttribute("value", ownedGen3.length);
             progGen3.setAttribute("title", ownedGen3.length.toString().concat("/", elemsGen3.length.toString()));
-            progGen3.setAttribute("max",   elemsGen3.length);
+            progGen3.setAttribute("max", elemsGen3.length);
             break;
         case 'Gen4':
             let elemsGen4 = document.querySelectorAll('.Gen4 > img:not([src="Images/Pokémon/0.png"])');
@@ -48,7 +48,7 @@ function countProgress(generation) {
             let progGen4 = document.getElementById('progressBars').getElementsByTagName('progress')[3];
             progGen4.setAttribute("value", ownedGen4.length);
             progGen4.setAttribute("title", ownedGen4.length.toString().concat("/", elemsGen4.length.toString()));
-            progGen4.setAttribute("max",   elemsGen4.length);
+            progGen4.setAttribute("max", elemsGen4.length);
             break;
         case 'Gen5':
             let elemsGen5 = document.querySelectorAll('.Gen5 > img:not([src="Images/Pokémon/0.png"])');
@@ -56,7 +56,7 @@ function countProgress(generation) {
             let progGen5 = document.getElementById('progressBars').getElementsByTagName('progress')[4];
             progGen5.setAttribute("value", ownedGen5.length);
             progGen5.setAttribute("title", ownedGen5.length.toString().concat("/", elemsGen5.length.toString()));
-            progGen5.setAttribute("max",   elemsGen5.length);
+            progGen5.setAttribute("max", elemsGen5.length);
             break;
         case 'Gen6':
             let elemsGen6 = document.querySelectorAll('.Gen6 > img:not([src="Images/Pokémon/0.png"])');
@@ -64,7 +64,7 @@ function countProgress(generation) {
             let progGen6 = document.getElementById('progressBars').getElementsByTagName('progress')[5];
             progGen6.setAttribute("value", ownedGen6.length);
             progGen6.setAttribute("title", ownedGen6.length.toString().concat("/", elemsGen6.length.toString()));
-            progGen6.setAttribute("max",   elemsGen6.length);
+            progGen6.setAttribute("max", elemsGen6.length);
             break;
         case 'Gen7':
             let elemsGen7 = document.querySelectorAll('.Gen7 > img:not([src="Images/Pokémon/0.png"])');
@@ -72,7 +72,7 @@ function countProgress(generation) {
             let progGen7 = document.getElementById('progressBars').getElementsByTagName('progress')[6];
             progGen7.setAttribute("value", ownedGen7.length);
             progGen7.setAttribute("title", ownedGen7.length.toString().concat("/", elemsGen7.length.toString()));
-            progGen7.setAttribute("max",   elemsGen7.length);
+            progGen7.setAttribute("max", elemsGen7.length);
             break;
         case 'Gen8':
             let elemsGen8 = document.querySelectorAll('.Gen8 > img:not([src="Images/Pokémon/0.png"])');
@@ -80,7 +80,7 @@ function countProgress(generation) {
             let progGen8 = document.getElementById('progressBars').getElementsByTagName('progress')[7];
             progGen8.setAttribute("value", ownedGen8.length);
             progGen8.setAttribute("title", ownedGen8.length.toString().concat("/", elemsGen8.length.toString()));
-            progGen8.setAttribute("max",   elemsGen8.length);
+            progGen8.setAttribute("max", elemsGen8.length);
             break;
         case 'Gen9':
             let elemsGen9 = document.querySelectorAll('.Gen9 > img:not([src="Images/Pokémon/0.png"])');
@@ -88,15 +88,23 @@ function countProgress(generation) {
             let progGen9 = document.getElementById('progressBars').getElementsByTagName('progress')[8];
             progGen9.setAttribute("value", ownedGen9.length);
             progGen9.setAttribute("title", ownedGen9.length.toString().concat("/", elemsGen9.length.toString()));
-            progGen9.setAttribute("max",   elemsGen9.length);
+            progGen9.setAttribute("max", elemsGen9.length);
+            break;
+        case 'Gen10':
+            let elemsGen10 = document.querySelectorAll('.Gen10 > img:not([src="Images/Pokémon/0.png"])');
+            let ownedGen10 = Array.from(elemsGen10).filter(value => Array.from(document.querySelectorAll('.Gen10 .own')).includes(value));
+            let progGen10 = document.getElementById('progressBars').getElementsByTagName('progress')[9];
+            progGen10.setAttribute("value", ownedGen10.length);
+            progGen10.setAttribute("title", ownedGen10.length.toString().concat("/", elemsGen10.length.toString()));
+            progGen10.setAttribute("max", elemsGen10.length);
             break;
         case 'Novelty':
             let elemsNovelty = document.querySelectorAll('.Novelty > img:not([src="Images/Pokémon/0.png"])');
             let ownedNovelty = Array.from(elemsNovelty).filter(value => Array.from(document.querySelectorAll('.Novelty .own')).includes(value));
-            let progNovelty = document.getElementById('progressBars').getElementsByTagName('progress')[9];
+            let progNovelty = document.getElementById('progressBars').getElementsByTagName('progress')[10];
             progNovelty.setAttribute("value", ownedNovelty.length);
             progNovelty.setAttribute("title", ownedNovelty.length.toString().concat("/", elemsNovelty.length.toString()));
-            progNovelty.setAttribute("max",   elemsNovelty.length);
+            progNovelty.setAttribute("max", elemsNovelty.length);
             break;
         default:
             console.log("counting all generations by default");
@@ -109,6 +117,7 @@ function countProgress(generation) {
             countProgress('Gen7');
             countProgress('Gen8');
             countProgress('Gen9');
+            countProgress('Gen10');
             countProgress('Novelty');
     }
 }
@@ -128,10 +137,10 @@ function mark(elem, generation, state = "own", count_now = true) {
     } else { // we've already ensured state is valid
         localStorage.removeItem("shiny ".concat(elem.alt));
     }
-    if ( count_now ) { countProgress(generation); }
+    if (count_now) { countProgress(generation); }
 }
 
-function markThis(event){
+function markThis(event) {
     clickState = localStorage.getItem("shiny ".concat(event.target.alt));
     gen = event.target.parentElement.classList[1];
     if (clickState !== null) {
